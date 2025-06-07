@@ -46,9 +46,7 @@ export class OpenAIProcessor implements ImageProcessorStrategy {
       );
     } catch (error) {
       throw new Error(
-        `OpenAI API error: ${
-          error instanceof Error ? error.message : String(error)
-        }`,
+        `OpenAI API error: ${error instanceof Error ? error.message : String(error)}`,
       );
     }
   }

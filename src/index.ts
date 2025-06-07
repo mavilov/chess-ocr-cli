@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 import { Command } from "commander";
-import { createProcessors, processImage } from "./imageProcessor";
+import { createProcessors, processImage } from "./imageProcessor.ts";
 import path from "path";
 import fs from "fs";
 import dotenv from "dotenv";
+
+const packageJson = fs.readFileSync("../package.json");
+const { version } = JSON.parse(packageJson.toString());
 
 dotenv.config();
 
@@ -19,7 +22,7 @@ program
   .description(
     "Converts chess game protocols from images to PGN format using Open AI Vision API.",
   )
-  .version("1.0.0")
+  .version(version)
   .requiredOption("-i, --input <path>", "Input image file path")
   .requiredOption(
     "-o, --output <path>",

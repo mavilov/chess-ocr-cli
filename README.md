@@ -1,6 +1,6 @@
 # chess-ocr-cli
 
-A command-line tool that converts chess game protocols from images to PGN format using AI vision services.
+A command-line tool that converts chess game protocols from images, for example taken by phone, to PGN format for further analysys. The conversion is done using AI vision services. Currrently, only the OpenAI API is fully supported.
 
 ## Installation
 
@@ -37,11 +37,11 @@ chess-ocr-cli --input <image-file> --output <pgn-file> [--mode <api-mode>]
 
 ### Options
 
--   `-i, --input <path>`: Path to the input image file (required)
--   `-o, --output <path>`: Path to save the output PGN file (required)
--   `-m, --mode <mode>`: API mode to use (default: "openai"). Supported modes: "openai" (Gemini support coming soon).
--   `-V, --version`: Output the version number
--   `-h, --help`: Display help for command
+- `-i, --input <path>`: Path to the input image file (required)
+- `-o, --output <path>`: Path to save the output PGN file (required)
+- `-m, --mode <mode>`: API mode to use (default: "openai"). Supported modes: "openai" (Gemini support coming soon).
+- `-V, --version`: Output the version number
+- `-h, --help`: Display help for command
 
 ### Example
 
@@ -71,12 +71,12 @@ GEMINI_API_KEY=your_gemini_api_key_here  # For future use
 
 Currently supports:
 
--   OpenAI Vision API for image analysis
--   PGN format output
--   Handwritten chess game protocols
+- OpenAI Vision API for image analysis
+- PGN format output
+- Handwritten chess game protocols
 
 Coming soon:
 
--   Google Gemini Vision API support
--   Additional output formats
--   Batch processing
+- Google Gemini Vision API support
+- Additional output formats
+- Batch processing
