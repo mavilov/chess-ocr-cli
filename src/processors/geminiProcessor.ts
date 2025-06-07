@@ -1,4 +1,4 @@
-import { ImageProcessorStrategy } from "../types";
+import { ImageProcessorStrategy } from "../types.ts";
 
 export class GeminiProcessor implements ImageProcessorStrategy {
   constructor() {

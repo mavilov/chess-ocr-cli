@@ -2,7 +2,6 @@
   "name": "chess-ocr-cli",
   "version": "1.0.0",
   "description": "A CLI tool to convert chess game protocols from images to PGN format using AI vision",
-  "type": "module",
   "main": "dist/index.js",
   "bin": {
     "chess-ocr-cli": "./dist/index.js"

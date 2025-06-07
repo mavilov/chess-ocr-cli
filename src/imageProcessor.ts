@@ -1,6 +1,6 @@
 import fs from "fs";
-import { ImageProcessorStrategy } from "./types";
-import { OpenAIProcessor } from "./processors/openaiProcessor";
+import { ImageProcessorStrategy } from "./types.ts";
+import { OpenAIProcessor } from "./processors/openaiProcessor.ts";
 // TODO import { GeminiProcessor } from './processors/geminiProcessor';
 
 interface ProcessorConfig {
