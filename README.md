@@ -80,3 +80,85 @@ Coming soon:
 - Google Gemini Vision API support
 - Additional output formats
 - Batch processing
+
+## Mobile App
+
+A React Native / Expo mobile app that lets you photograph handwritten chess scoresheets with your phone and convert them to PGN files.
+
+### Features
+
+- 📷 Take a photo or pick from gallery
+- 🤖 AI-powered handwriting recognition via OpenAI Vision
+- 📋 Copy PGN to clipboard
+- 📤 Share PGN files via email, AirDrop, WhatsApp, etc.
+- 🔑 API key stored securely on device
+
+### Prerequisites
+
+- Node.js (LTS)
+- [Expo Go](https://expo.dev/go) app installed on your phone (available on App Store and Google Play)
+
+### Setup
+
+```bash
+cd src/mobile
+npm install
+```
+
+### Running Locally
+
+```bash
+cd src/mobile
+npx expo start
+```
+
+Scan the QR code in the terminal with your phone:
+
+- **iPhone**: Use the Camera app → tap the link to open in Expo Go
+- **Android**: Open Expo Go → scan the QR code
+
+> ⚠️ Your phone and computer must be on the same Wi-Fi network.
+
+### Testing Over the Internet (No Same Wi-Fi Needed)
+
+Use tunnel mode to share with anyone, anywhere:
+
+```bash
+npx expo start --tunnel
+```
+
+Send the QR code or the `exp://` URL to the other person. They scan it with Expo Go.
+
+### Building a Standalone APK (Android)
+
+To build an installable `.apk` you can share directly:
+
+```bash
+npm install -g eas-cli
+eas login
+eas build --platform android --profile preview
+```
+
+Add this to `src/mobile/eas.json` first:
+
+```json
+{
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "android": { "buildType": "apk" }
+    }
+  }
+}
+```
+
+When the build completes, you'll get a download link to share.
+
+### First-Time Usage
+
+1. Open the app → tap the ⚙️ gear icon to go to Settings
+2. Enter your OpenAI API key and tap **Save**
+3. Go back to the home screen
+4. Tap **Take Photo** or **Pick from Gallery**
+5. The AI will analyze the scoresheet and return PGN
+6. Use **Copy** or **Share** to export the result
