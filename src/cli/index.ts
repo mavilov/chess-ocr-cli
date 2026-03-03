@@ -5,7 +5,7 @@ import path from "path";
 import fs from "fs";
 import dotenv from "dotenv";
 
-const packageJson = fs.readFileSync("../package.json");
+const packageJson = fs.readFileSync("./package.json");
 const { version } = JSON.parse(packageJson.toString());
 
 dotenv.config();

@@ -8,10 +8,10 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/index.ts",
-    "dev": "ts-node src/index.ts",
-    "prettier:fix": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
-    "prettier:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md}\""
+    "start": "ts-node index.ts",
+    "dev": "ts-node index.ts",
+    "prettier:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "prettier:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\""
   },
   "keywords": [
     "chess",

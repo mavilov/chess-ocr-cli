@@ -1,6 +1,6 @@
 # chess-ocr-cli
 
-A command-line tool that converts chess game protocols from images, for example taken by phone, to PGN format for further analysys. The conversion is done using AI vision services. Currrently, only the OpenAI API is fully supported.
+A command-line tool that converts chess game protocols from images, for example taken by phone, to PGN format for further analysis. The conversion is done using AI vision services. Currently, only the OpenAI API is fully supported.
 
 ## Installation
 
@@ -95,7 +95,7 @@ A React Native / Expo mobile app that lets you photograph handwritten chess scor
 
 ### Prerequisites
 
-- Node.js (LTS)
+- Node.js (LTS). Tested with v25.6.1
 - [Expo Go](https://expo.dev/go) app installed on your phone (available on App Store and Google Play)
 
 ### Setup
