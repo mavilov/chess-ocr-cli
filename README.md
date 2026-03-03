@@ -95,7 +95,7 @@ A React Native / Expo mobile app that lets you photograph handwritten chess scor
 
 ### Prerequisites
 
-- Node.js (LTS)
+- Node.js (LTS). Tested with v25.6.1
 - [Expo Go](https://expo.dev/go) app installed on your phone (available on App Store and Google Play)
 
 ### Setup
