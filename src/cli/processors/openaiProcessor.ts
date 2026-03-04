@@ -1,5 +1,5 @@
 import OpenAI from "openai";
-import { ImageProcessorStrategy } from "../types.ts";
+import { ImageProcessorStrategy } from "../types";
 
 export class OpenAIProcessor implements ImageProcessorStrategy {
   private readonly client: OpenAI;
