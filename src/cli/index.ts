@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { Command } from "commander";
-import { createProcessors, processImage } from "./imageProcessor.ts";
+import { createProcessors, processImage } from "./imageProcessor";
 import path from "path";
 import fs from "fs";
 import dotenv from "dotenv";
