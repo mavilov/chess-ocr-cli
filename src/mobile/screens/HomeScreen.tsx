@@ -1,12 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Alert,
-  StyleSheet,
-  Image,
-} from "react-native";
+import { View, Text, TouchableOpacity, Alert, StyleSheet } from "react-native";
 import * as ImagePicker from "expo-image-picker";
 import type { NativeStackScreenProps } from "@react-navigation/native-stack";
 import type { RootStackParamList } from "../App";
@@ -91,7 +84,9 @@ export default function HomeScreen({ navigation }: Props) {
         <Text style={styles.icon}>♚</Text>
         <Text style={sharedStyles.title}>Chess OCR</Text>
         <Text style={sharedStyles.subtitle}>
-          Photograph a handwritten chess scoresheet and convert it to PGN
+          Converts a handwritten chess scoresheet to Portable Game Notation
+          (PGN) using AI. Get started by taking a photo or picking one from your
+          gallery.
         </Text>
       </View>
 

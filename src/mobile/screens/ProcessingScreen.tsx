@@ -85,7 +85,9 @@ export default function ProcessingScreen({ route, navigation }: Props) {
         style={styles.spinner}
       />
       <Text style={styles.statusText}>{status}</Text>
-      <Text style={styles.hint}>This usually takes 10–20 seconds</Text>
+      <Text style={styles.hint}>
+        This usually takes from 10 seconds to a minute
+      </Text>
     </View>
   );
 }

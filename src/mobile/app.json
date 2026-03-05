@@ -1,6 +1,8 @@
 {
   "expo": {
-    "name": "Chess OCR",
+    "name": "Chess Scoresheet OCR",
+    "description": "An app that converts handwritten chess scoresheets to PGN using OpenAI.",
+    "authors": ["Maksim Avilov <mavilov@hotmail.com>"],
     "slug": "chess-ocr",
     "version": "1.0.0",
     "orientation": "portrait",

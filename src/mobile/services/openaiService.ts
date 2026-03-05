@@ -1,10 +1,10 @@
 const OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions";
 
 const SYSTEM_PROMPT =
-  "This is a handwritten chess game protocol. Please analyze it and convert " +
+  "This is a handwritten chess game protocol. Analyze it and convert " +
   "it to PGN format that is embedded into markdown. Include all moves, " +
   "results, and any metadata if visible (player names, date, event, etc.). " +
-  "If you see any ambiguous or unclear moves, please make your best guess " +
+  "If you see any ambiguous or unclear moves, make your best guess " +
   "and add a comment. The pgn section in the markdown must be a valid PGN.";
 
 /**
@@ -27,8 +27,7 @@ export async function processImageWithOpenAI(
       Authorization: `Bearer ${apiKey}`,
     },
     body: JSON.stringify({
-      model: "gpt-4o",
-      max_tokens: 1000,
+      model: "gpt-5-mini",
       messages: [
         {
           role: "user",

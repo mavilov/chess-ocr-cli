@@ -1,3 +1,8 @@
+/**
+ * storageService.ts — handles saving and retrieving the OpenAI API key from device storage.
+ * Uses AsyncStorage for persistence.
+ */
+
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const API_KEY_STORAGE_KEY = "chess_ocr_openai_api_key";
